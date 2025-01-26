@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BG-Change with Hex</title>
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" type="text/css">
+   
+    <!-- custom js -->
+    <script src="./app.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Section ONe -->
+      <section class="section">
+        <div class="section-header">
+          <h5 class="section-title">Display Color</h5>
+          <div>
+            <input type="checkbox" name="toggle-checkbox" class="toggle-checkbox" id="toggle-checkbox">
+            <label for="toggle-checkbox" class="toggle-label">
+              <i class="fas fa-moon" aria-hidden="true"></i>
+              <i class="fas fa-sun" aria-hidden="true"></i>
+              <span class="toggle-ball"></span>
+            </label>
+          </div>
+          <button type="button" class="section-action-btn" id="random-color-generator">Random Color</button>
+        </div>
+        <div class="divider"></div>
+        <div class="color-display" id="color-display"></div>
+      </section>
+      <!-- Section Four -->
+      <section class="section">
+        <div class="section-header">
+          <h5 class="section-title">Color Picker</h5>          
+        </div>
+        <div class="divider"></div>
+        <div class="color-picker">
+          <div class="color-picker-img">
+            <label for="input-file" id="drop-area" class="drop-area">
+              <input type="button" name="" id="select-img-color" class="select-img-color" value="Select to get color from image" />
+              <input type="file" accept="image/*" id="input-file" class="input-file" hidden/>
+              <div class="image-view" id="image-view">
+              <img src="./Images/upload.png" id="drag-img" class="drag-img" alt="Drag and Drop Image" />
+              <p>Drag and Drop or Click here <br> to Upload image</p>
+              <span>Upload any image from desktop</span>
+              </div>
+            </label>
+          </div>
+          <div class="color-picker-btn-img">
+            <div class="color-picker-btn">
+              <input type="color" class="color-picker-btn" id="color-picker-btn" title="Click hare to chose color"/>
+            </div>
+            <div class="color-picker-img-section">
+              <img class="color-picker-img" id="color-picker-img" src="./Images/Colors.gif" alt="Color Picker" />
+          </div>
+        </div>
+      </section>
+      <!-- Section Two -->
+      <section class="section">
+        <div class="copy-color">
+          <h4>Change & Copy Color</h4>
+          <div>
+            <button type="button" class="copy-action-btn save-button" id="save-action-btn">
+              Save
+            </button>
+            <button type="button" class="copy-action-btn" id="copy-action-btn">
+              Copy
+            </button>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="copy-mode">
+          <h5>Select Copy Mode</h5>
+
+          <div class="select-copy-mode">
+            <input type="radio" name="color-mode" id="hex-mode"  value="hex" checked/>
+            <label for="hex-mode" class="">Hex</label>
+            <input type="radio" name="color-mode" id="rgb-mode" value="rgb"  />
+            <label for="rgb-mode">RGB</label>
+          </div>
+        </div>
+
+        <div class="hex-rgb-inputbox">
+          <div class="hex-inputbox">
+            <p>Hex</p>
+            <input type="text" name="" class="text-input" id="hex-inputbox" value="#dddeee" />
+          </div>
+          <div class="rgb-inputbox">
+            <p>RGB</p>
+            <input type="text" name="" class="text-input" id="rgb-inputbox" value="rgb(221,222,238)" disabled/>
+          </div>
+        </div>
+        <div class="color-slider">
+          <h4 class="slider-lable">Adjust RGB Color</h4>
+          <div class="slider">
+            <div class="slider-red slider-grid">
+              <div class="slider-text">
+                <p>Red</p>
+                <p id="slider-color-red-label">221</p>
+              </div>
+              <input type="range" name="" max="255" class="slider-color-red" id="slider-color-red" />
+            </div>
+            <div class="slider-green slider-grid">
+              <div class="slider-text">
+                <p>Green</p>
+                <p id="slider-color-green-label">222</p>
+              </div>
+              <input type="range" name="" max="255" id="slider-color-green" />
+            </div>
+            <div class="slider-blue slider-grid">
+              <div class="slider-text">
+                <p>Blue</p>
+                <p id="slider-color-blue-label">238</p>
+              </div>
+              <input type="range" name="" max="255" id="slider-color-blue" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Three -->
+      <section class="section">
+        <div>
+          <h5>Color Preset</h5>
+        </div>
+        <div class="divider"></div>
+        <div class="color-palettes" id="color-palettes">
+          
+        </div>
+      </section>
+      <!-- Section Five -->
+      <section class="section">
+        <div>
+          <h5>Custom Color Preset</h5>
+        </div>
+        <div class="divider"></div>
+        <div class="color-palettes" id="custom-color-palettes">
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
