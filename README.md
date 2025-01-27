@@ -17,7 +17,7 @@ Generate random colors and pick colors from images and color palettes. This proj
 
 ## Demo
 
-Check out the live demo [here](https://incandescent-brigadeiros-5ffa0f.netlify.app/).
+Check out the live demo [here](https://generate-color-and-pick.netlify.app/).
 
 ## Installation
 
