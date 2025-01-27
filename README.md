@@ -26,8 +26,6 @@ To run this project locally, clone the repository and install the required depen
 ```bash
 git clone https://github.com/abdussamadarefi/color-generator.git
 cd color-generator
-npm install
-npm start
 ```
 
 ## Usage
