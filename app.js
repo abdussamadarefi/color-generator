@@ -29,8 +29,8 @@ const defaultColorPalette = [
     "#D95B43"
 ]
 
-const audio = new Audio('./copy-sound.mp3')
-const errorAudio = new Audio('./error_sound.mp3')
+const audio = new Audio('./Audio/copy-sound.mp3')
+const errorAudio = new Audio('./Audio/error_sound.mp3')
 let customColors = new Array(24)
 let alertShown = false
 
