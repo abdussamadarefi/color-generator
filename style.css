@@ -43,6 +43,9 @@ body {
 .dark .copy-action-btn{
   color: #f39c12;
 }
+.dark .rgb-inputbox{
+  color: rgb(255, 255, 255);
+}
 .toggle-checkbox{
   opacity: 0;
   position: absolute;
