@@ -2,7 +2,7 @@
 
 # Color Generator
 
-Generate random colors and pick colors from images and color palettes. This project was created to practice DOM manipulation, inspired by the "100 DOM Projects" course by Stack Learner, mentored by @mrhm-dev (HM Nayem) ([GitHub](https://github.com/mrhm-dev)).
+Generate random colors and pick colors from images and color palettes. This project was created to practice DOM manipulation, inspired by the "100 DOM Projects" course by Stack Learner, mentored by [@mrhm-dev](https://github.com/mrhm-dev) (HM Nayem).
 
 ## Features added by me
 
